@@ -48,3 +48,4 @@ sudo systemctl enable danted
 sudo adduser proxyuser
 
 echo "Dante SOCKS5 代理已成功配置并启动。使用 proxyuser 作为代理用户名进行连接。"
+echo "Socks5 代理信息为[直接复制]: $(hostname -I | awk '{print $1}'):1080:proxyuser:密码"
